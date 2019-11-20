@@ -79,6 +79,11 @@ body {
   .column.side, .column.main {
     width: 100%;
   }
+
+    #lgo {
+        max-width: 40px;
+        max-height: 40px;
+    }
 }
 
 
