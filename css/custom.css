@@ -1,0 +1,100 @@
+.jumbotron {
+    color: black;
+    background-color: #040f0f;
+    color: #fcfffc;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #248232;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  position: sticky;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #2ba84a;
+}
+
+ul.topnav li a.active {
+    background-color: #2d3a3a;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+body {
+    background-color: #2d3a3a
+}
+
+
+
+
+
+
+
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  color: #fcfffc;
+  float: left;
+  padding: 8px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  padding-left: 16px;
+}
+
+/* Middle column */
+.column.main {
+  width: 75%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.main {
+    width: 100%;
+  }
+}
+
+
+/*
+img {
+  display: inline-block !important;
+  max-width: 100% !important;
+}*/
+
+
+#container {
+    position:relative;
+}
+
+#icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
