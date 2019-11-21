@@ -1,9 +1,19 @@
+/*about me*/
+
 .jumbotron {
     color: black;
     background-color: #040f0f;
     color: #fcfffc;
     text-align: center;
     margin-bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#name {
+    font-size: 400%;
+}
+#subtitle {
+    font-size: 150%;
 }
 
 
@@ -81,9 +91,21 @@ body {
   }
 
     #lgo {
-        max-width: 40px;
-        max-height: 40px;
+        max-width: 30px;
+        max-height: 30px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    #lgo {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+#lgo {
+    max-height: 60px;
+    max-width: 60px;
 }
 
 
@@ -103,3 +125,47 @@ img {
     top: 0;
     right: 0;
 }
+
+
+.SidebarText {
+    font-size: 1.5vw;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .SidebarText {
+        font-size: 4vw;
+    } 
+}
+
+
+
+
+
+
+
+/*project blog*/
+.BlogPost {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.PostImage {
+    float: left;
+    width: 15%;
+    padding:5px;
+}
+
+.PostText {
+    float: right;
+    width: 85%;
+    color: #fcfffc;
+    padding: 5px;
+}
+
+
+
+
+
+
