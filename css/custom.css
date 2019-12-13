@@ -105,7 +105,12 @@ body {
 
 #lgo {
     max-height: 60px;
-    max-width: 60px;
+    max-width: 60px;   
+}
+
+#lgo:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 
@@ -139,6 +144,10 @@ img {
     } 
 }
 
+/*Summary section of About Me*/
+.ProjImg {
+    width: 100%;
+}
 
 
 
@@ -151,9 +160,26 @@ img {
     margin: 0 auto;
 }
 
-.PostImage {
+.PostSide {
     float: left;
     width: 15%;
+}
+
+.PostSideText {
+    text-align: center;
+    font-size: 10;
+    color: #fcfffc;
+    margin: 0;
+}
+@media screen and (max-width: 800px) {
+    .PostSideText {
+        font-size: 2vw;
+    } 
+}
+
+.PostImage {
+    float: left;
+    width: 100%;
     padding:5px;
 }
 
