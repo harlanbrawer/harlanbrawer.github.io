@@ -70,7 +70,7 @@ body {
 .column {
   color: #fcfffc;
   float: left;
-  padding: 8px;
+  padding: 16px;
 }
 
 /* Left and right column */
@@ -144,10 +144,54 @@ img {
     } 
 }
 
-/*Summary section of About Me*/
-.ProjImg {
-    width: 100%;
+
+
+
+/*Summary and important projects section of About Me*/
+.HSumBg {
+    background: #248232;
 }
+.HSum {
+    font-size: 125%;
+}
+
+.ProjTitle {
+    font-size: 5vw;
+    
+}
+
+.ProjImg {
+    width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+    .ProjImg {
+        width: 100%;
+    }
+}
+
+.RowImg {
+    
+}
+
+.RowImgCap {
+    float: right;
+    width: 33vw;
+    font-size: 75%
+}
+@media screen and (max-width: 800px) {
+    .RowImgCap {
+        width: 100%;
+    }
+}
+
+.ProjDesc {
+    padding-top: 6px;
+}
+
+
+
+
 
 
 
