@@ -21,11 +21,15 @@ ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #248232;
+  z-index: 4;
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+    float: left;
+    z-index: 4;
+    background-color: #248232;
+}
 
 ul.topnav li a {
   display: block;
@@ -67,10 +71,15 @@ body {
 
 
 /* Create three unequal columns that floats next to each other */
+.row {
+    z-index: 1;
+    width: 100%;
+    padding: 4px;
+}
+
 .column {
   color: #fcfffc;
-  float: left;
-  padding: 16px;
+  padding: 10px;
 }
 
 /* Left and right column */
@@ -192,8 +201,43 @@ img {
 
 
 
+/* dropdown */
+.dropbtn {
+  background-color: #248232;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 0px;
+  width: 100%;
+  border: none;
+}
 
+.dropdown {
+  position: relative;
+  text-align: center;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #248232;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: #2ba84a;}
 
 
 
